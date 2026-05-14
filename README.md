@@ -1,7 +1,7 @@
 # 代理软件使用tips
 个人对代理客户端的使用体验和设置总结。
 
-#一、关于客户端选择:
+# 一、关于客户端选择:
 
 主要是clash类和singbox类。机场用户推荐选择clash类。
 
@@ -17,7 +17,7 @@ windows端:v2rayn
 
 android端:v2rayng
 
-#二、客户端体验或bug:
+# 二、客户端体验或bug:
 
 1、clash分流控制较细，但是很多机场的默认配置都会产生dns泄露。
 
@@ -34,7 +34,7 @@ clash verge的tun不需要管理员权限。
 5、flclash 截止2026年5月的0.8.92版，其dns覆写功能会产生dns泄露，尝试多种配置均无法解决。可能是其他地方设置的不对。相同设置在clash meta for android和clash verge rev上均可以防止dns泄露。
 后面会讲解dns覆写功能
 
-#三、clash类的dns覆写功能个人理解
+# 三、clash类的dns覆写功能个人理解
 
 1、关于dns防泄露有没有意义，我也不知道，哈哈哈。
 
@@ -70,7 +70,7 @@ nameserver-policy:
 
 8、fake ip 和redir host放在tun模式里讲解，如果只用浏览器插件连接到代理软件，而不开启全局代理，这两个模式意义不大。
 
-#四、tun模式
+# 四、tun模式
 
 tun模式就是开了一个虚拟网卡，然后所有流量进入物理网卡之前先通过虚拟网卡进入clash或者singbox的核心。对于windows平台来说，系统代理不能解决所有软件的代理设置，特别是现在流行ai agent，cli版的agent包括很多开发工具只在终端里跑的都是不走系统代理的，通过环境变量代理他们又很麻烦。
 
